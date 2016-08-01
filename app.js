@@ -3,7 +3,8 @@ angular
     .controller ("PostitCtrl", PostitCtrl);
 
     function PostitCtrl($scope) {
-        $scope.save = function add() {
-            console.log ("Cadastro salvo com sucesso!");
+        $scope.save = function () {
+            alert ("Cadastro salvo com sucesso!");
+            window.location='./';
         }
     }
