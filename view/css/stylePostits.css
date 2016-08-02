@@ -1,18 +1,23 @@
-#postits{
-	margin: 10px;
-	border-width: 1px;
-    border-style: solid;
-    border-color: #000;
+#postits-diretive{
+	margin:10px;
+	margin-left: 20px;
 	height: 240px;
-	width: 15%;
+	width: 16%;
 	float: left;
 	color: white;
+
+	box-shadow: 7px 7px 0 #333;
+   -webkit-box-shadow: 5px 5px 0 #333;
+   -moz-box-shadow: 5px 5px 0 #333;
 }
 
 
-h1{
-	text-align: center;
+h3{
+	margin-left: 10px;
+	text-align: left;
 }
 p{
-	margin-left: 10px;
+	text-align: justify;
+	margin-left: 10px; 
+	margin-right: 10px;
 }

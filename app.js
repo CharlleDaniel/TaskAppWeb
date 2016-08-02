@@ -11,7 +11,10 @@ var myApp = angular.module ("Postits", []);
     	
         $scope.get = function () {
 
-        	var pos= [{title:"John", text:"Doe", color:"#00f"},{title:"John", text:"Doe", color:"grey"}];
+        	var pos= [{title:"Send email", text:"my text example", color:"red"},
+            {title:"Buy new car", text:"New Postit", color:"grey"},
+            {title:"Go dias home", text:"New Postit", color:"orange"}];
+
             $scope.postits=angular.fromJson(pos);
 
         }
