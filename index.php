@@ -15,7 +15,7 @@
         <!-- container for view all pages -->
         <div id="container" ng-controller="PostitCtrl2">
             <!-- button new postit-->    
-            <a class="btn btn-primary"  data-toggle="modal" href='#modal-id'><i class="fa fa-file-text-o"></i> New Task</a>
+            <a class="btn btn-primary" ng-click="setMaxMinDateTime()" data-toggle="modal" href='#modal-id'><i class="fa fa-file-text-o"></i> New Task</a>
 
             <div id="quadro">
                 <br>

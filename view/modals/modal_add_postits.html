@@ -1,6 +1,6 @@
 <div class="modal fade" id="modal-id">
 	<div class="modal-dialog">
-		<div class="modal-content">
+		<div class="modal-content" ng-controller="PostitCtrl">
 
 			<div class="modal-header">
 				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
@@ -10,13 +10,16 @@
 			<div class="modal-body">
 				
 				<label>Title*</label> <br>
-				<input type="text" placeholder=""> <br> <br>
+				<input type="text" placeholder="" ng-model="postit.text"> <br> <br>
+				<label>Date and time to perform the task*</label> <br>
+				<input type="date" id="dateTask" name="day" min="2016-08-02" ng-model="postit.date">
+				<input type="time" id="dateTime" name="time"  ng-model="postit.time"><br><br>
 				<label>Text*</label> <br>
-				<textarea  rows="5" cols="75" placeholder=""></textarea>
+				<textarea  rows="5" cols="70" placeholder="" ng-model="postit.title"></textarea>
 				
 			</div>
 
-			<div class="modal-footer clearfix" ng-controller="PostitCtrl">
+			<div class="modal-footer clearfix">
 				<button type="button" class="btn btn-primary pull-right" ng-click="save()"><i class="fa fa-file-text-o"></i> Create</button>
 			</div>
 		</div>
