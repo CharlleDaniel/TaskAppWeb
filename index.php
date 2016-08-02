@@ -5,10 +5,15 @@
         <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
         <link rel="stylesheet" href="./view/css/style.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="/postits/view/css/stylePostits.css">
     </head>
     <body>
-
+        
         <a class="btn btn-primary" data-toggle="modal" href='#modal-id'><i class="fa fa-file-text-o"></i> Novo Postit</a>
+        <div ng-controller="PostitCtrl2">
+            <postit ng-repeat="p in postits" postit-color="p.color" postit-text="p.text" postit-title="p.title"></postit>
+        </div>
         <div class="modal fade" id="modal-id">
             <div class="modal-dialog">
                 <div class="modal-content">
